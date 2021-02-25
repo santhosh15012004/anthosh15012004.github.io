@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Santhosh</title>
+    <meta name="description" content="Krithick's Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        var i = 0;
+        var txt = 'HELLO GUYZ !'; /* The text */
+        var speed = 70; /* The speed/duration of the effect in milliseconds */
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("title").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }</script>
+</head>
+
+<body onload="typeWriter()" style="background-color: black;"> 
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Santhosh</a>
+        </header>
+        <div class="content">
+            <h2 id="title"></h2>
+            <br>
+            <h2>I am <span>Santhosh</span></h2>
+            <a href="#section1">Gallery</a>
+        </div>
+        <img src="./home.jpg" width="500px" height="500px" class="home">
+        <ul class="sci">
+            <li><a href="#" target="_blank"><img src="./facebook.png"></i></a></li>
+            <li><a href="https://www.instagram.com/mr_happie_boy/" target="_blank"><img src="./instagram.png"></i></a></li>
+        </ul>
+    </section>
+    <section id="section1">
+    <img src="./1.jpg" class="img1">
+    <img src="./2.jpg" class="img2">
+</section>
+</body>
+
+</html>
