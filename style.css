@@ -177,19 +177,43 @@ img.img1{
 img.img2{
     float: right;width:600px; height:600px
 }
+img.img3{
+    float: left;width:500px; height:600px
+}
+img.img4{
+    float: right;width:600px; height:600px
+}
+img.img5{
+    float: left;width:500px; height:500px
+}
+img.img6{
+    float: right;width:600px; height:600px
+}
 img.home{
     margin-top:10px;margin-left:250px
 }
 @media (max-width:767px)
 {
     img.home{
-        display: none;
-    }
+    display:none;
+}
     img.img1{
         width: 100%;
         height: auto;
     }
     img.img2{
+        width: 100%;
+        height: auto;    }   
+    img.img3{
+        width: 100%;
+        height: auto;    }   
+    img.img4{
+        width: 100%;
+        height: auto;    }   
+    img.img5{
+        width: 100%;
+        height: auto;    }   
+    img.img6{
         width: 100%;
         height: auto;    }   
     header{
@@ -198,7 +222,11 @@ img.home{
     }
     .banner{
         padding: 100px 50px 150px;
-        min-height: 95vh;
+        min-height: 100vh;
+        background-image: url(./home.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 600px;
     }
     .banner h2{
         font-size: 1.8em;
